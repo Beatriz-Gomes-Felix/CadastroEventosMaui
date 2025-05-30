@@ -1,18 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CadastroEventosMaui.MainPage"
-             Title="Cadastro de Evento">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="10">
-            <Entry Placeholder="Nome do Evento" Text="{Binding Nome}" />
-            <DatePicker Date="{Binding DataInicio}" />
-            <DatePicker Date="{Binding DataFim}" />
-            <Entry Placeholder="Número de Participantes" Keyboard="Numeric" Text="{Binding NumeroParticipantes}" />
-            <Entry Placeholder="Local do Evento" Text="{Binding Local}" />
-            <Entry Placeholder="Custo por Participante" Keyboard="Numeric" Text="{Binding CustoPorParticipante}" />
+             ...
+             BackgroundColor="#f0f8ff"> <!-- cor de fundo azul clarinho -->
 
-            <Button Text="Cadastrar" Clicked="OnCadastrarClicked"/>
-        </VerticalStackLayout>
-    </ScrollView>
+    <StackLayout Padding="20" Spacing="15">
+
+        <Label Text="Cadastro de Evento" 
+               FontSize="28" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center"
+               TextColor="#003366" /> <!-- azul escuro -->
+
+        <!-- Seus campos de entrada aqui... -->
+
+        <Button Text="Salvar"
+                BackgroundColor="#007ACC" <!-- azul vibrante -->
+                TextColor="White"
+                CornerRadius="10" />
+
+    </StackLayout>
 </ContentPage>
